@@ -10,4 +10,5 @@ const connection = await mysql.createConnection({
   
 });
 
-const db = drizzle({ client: connection });
+// const db = drizzle({ client: connection });
+export const db= drizzle(connection);
